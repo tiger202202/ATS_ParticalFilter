@@ -169,7 +169,6 @@ classdef Node
             
             for i_neighbor = 1:num_neighbor
 			
-                % 根据微信的沟通，使用相对时钟斜率计算。
                 % 加入噪声。真的随机数，所以每次跑，图表都不一样。
                 % 噪声大小定义在这里：ConfigParticalFilter.delta_r = 试试 0.001~0.01
                 obj.relative_slope(i_neighbor) = obj.relative_slope(i_neighbor) + obj.v(t);	
